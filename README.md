@@ -27,5 +27,5 @@ DOWNLOADER_MIDDLEWARES = {
 # ZenRows API Key
 ZENROWS_API_KEY = "<YOUR_ZENROWS_API_KEY>"
 
-USE_ZENROWS_PROXY = False # to turn off premium proxy
+USE_ZENROWS_PROXY = False #to turn off premium proxy
 ```
