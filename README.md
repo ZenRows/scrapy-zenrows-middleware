@@ -55,7 +55,9 @@ Check out [how autoparsing works](https://docs.zenrows.com/scraper-api/features/
 
 ### Output Filter
 
-You can also specify the data you want to scrape with the `OUTPUTS` settings option. For instance, to parse tables automatically. You don't need to include this option if you don't need it.
+You can also specify the data you want to scrape with the `OUTPUTS` settings option. Note that you don't need to include the OUTPUTS option if you don't need it.
+
+For instance, to parse tables automatically:
 
 _settings.py_
 
