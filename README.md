@@ -16,9 +16,9 @@ pip install zenrows_scrapy_middleware
 
 _settings.py_
 
-```DOWNLOADER_MIDDLEWARES = {
-    # "my_scraper.middlewares.ZenRowsMiddleware": 543,  # Set the priority appropriately
-    "zenrows_scraper_api_middleware.middleware.ZenRowsMiddleware": 543,
+```
+DOWNLOADER_MIDDLEWARES = {
+    "zenrows_scrapy_middleware.middleware.ZenRowsMiddleware": 543,
 }
 
 # ZenRows API Key
