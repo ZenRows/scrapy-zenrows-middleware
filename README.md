@@ -16,7 +16,7 @@ pip install zenrows_scrapy_middleware
 
 _settings.py_
 
-```
+```python
 DOWNLOADER_MIDDLEWARES = {
     "zenrows_scrapy_middleware.middleware.ZenRowsMiddleware": 543,
 }
@@ -31,7 +31,7 @@ The middleware will use premium proxy by default. So, `USE_ZENROWS_PROXY` is `Tr
 
 _settings.py_
 
-```
+```python
 # ...
 
 USE_ZENROWS_PROXY = False # to turn off premium proxy (True by default)
@@ -43,7 +43,7 @@ USE_ZENROWS_PROXY = False # to turn off premium proxy (True by default)
 
 _settings.py_
 
-```
+```python
 # ...
 
 AUTOPARSE = True # False by default
@@ -61,7 +61,7 @@ For instance, to parse tables automatically:
 
 _settings.py_
 
-```
+```python
 # ...
 
 OUTPUTS = "tables"
