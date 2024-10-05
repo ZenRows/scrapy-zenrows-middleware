@@ -57,6 +57,5 @@ class ZenRowsMiddleware:
         if self.outputs is not None:
             payload["outputs"] = self.outputs
 
-        # Construct the API URL with the payload
         api_url = f"{self.zenrows_url}/?apikey={self.api_key}&{urlencode(payload)}"
         return api_url
