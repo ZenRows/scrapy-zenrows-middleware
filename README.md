@@ -27,7 +27,7 @@ ZENROWS_API_KEY = "<YOUR_ZENROWS_API_KEY>"
 
 ## Use Premium Proxy Rotation Feature
 
-The middleware will use premium proxy by default. So, `USE_ZENROWS_PROXY` is `True` by default and you don't have to do anything to use premium proxy mode. To turn off premium proxy, use `USE_ZENROWS_PROXY = False`:
+The middleware will use premium proxy by default. So, `USE_ZENROWS_PROXY` is `True` by default and you don't have to do anything to use premium proxy mode. To turn off premium proxy, set `USE_ZENROWS_PROXY = False`:
 
 _settings.py_
 
