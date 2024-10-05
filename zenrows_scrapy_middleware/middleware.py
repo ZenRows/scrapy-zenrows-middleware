@@ -35,6 +35,7 @@ class ZenRowsMiddleware:
             autoparse=autoparse,
             outputs=outputs,
         )
+    **
 
     def process_request(self, request, spider):
         api_url = self.get_zenrows_api_url(request.url)
