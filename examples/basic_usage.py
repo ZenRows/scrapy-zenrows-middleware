@@ -12,9 +12,7 @@ class MySpider(scrapy.Spider):
         "DOWNLOADER_MIDDLEWARES": {
             "zenrows_scrapy_middleware.middleware.ZenRowsMiddleware": 543,
         },
-        "USE_ZENROWS_PROXY": False,  # True by default
-        # "AUTOPARSE": True,  # False by default
-        # "PARSETABLE": True,  # False by default
+        "USE_ZENROWS_PROXY": True,  # False by default
     }
 
     def parse(self, response):
