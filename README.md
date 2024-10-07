@@ -116,7 +116,7 @@ class YourSpider(scrapy.Spider):
                 url=url,
                 # overrides the settings config for this specific spider
                 params={
-                    "custom_headers": "true",  # to activate custom headers
+                    "custom_headers": "true",  # to use custom headers
                 },
                 # add a referer header
                 headers={
