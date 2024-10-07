@@ -125,4 +125,4 @@ class YourSpider(scrapy.Spider):
             )
 ```
 
-Check our [Headers Feature](https://docs.zenrows.com/scraper-api/features/headers) for more information on the accepted request headers and how to set them.
+Check our [headers heature](https://docs.zenrows.com/scraper-api/features/headers) for more information on the accepted request headers and how to set them.
