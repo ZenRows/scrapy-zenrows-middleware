@@ -1,3 +1,18 @@
+Metadata-Version: 2.1
+Name: scrapy_zenrows
+Version: 0.1
+Summary: A Scrapy middleware for accessing ZenRows Scraper API with minimal setup.
+Home-page: https://github.com/ZenRows/scrapy-zenrows-middleware
+Author: Idowu Omisola and Yuvraj Chandra
+Author-email: support@zenrows.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scrapy
+
 # ZenRows Middleware for Scrapy
 
 This is a Scrapy middleware that allows easy integration with the ZenRows Scraper API for web scraping.
