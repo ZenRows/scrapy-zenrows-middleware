@@ -5,7 +5,7 @@ This is a Scrapy middleware that allows easy integration with the ZenRows Scrape
 ## Installation
 
 ```bash
-pip install scrapy_zenrows
+pip install scrapy-zenrows
 ```
 
 ## Usage
