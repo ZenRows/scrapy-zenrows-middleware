@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
+from scrapy_zenrows.__version__ import __version__
+
 
 setup(
     name="scrapy_zenrows",
-    version="0.1",
+    version=__version__,
     description="A Scrapy middleware for accessing ZenRows Scraper API with minimal setup.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
