@@ -11,9 +11,9 @@ class ZenRowsRequest(Request):
         *args,
         **kwargs,
     ):
-        # store params as a request attribute
+
         self.params = params or {}
-        # initialize the request with the original Request class
+
         super(ZenRowsRequest, self).__init__(
             url,
             headers=headers,
@@ -22,7 +22,6 @@ class ZenRowsRequest(Request):
         )
 
     def build_zenrows_url(self, url, params):
-        # Build the URL for ZenRows API
         payload = {"url": url}
         if params:
             payload.update(params)
