@@ -49,7 +49,7 @@ If you have multiple spiders and don't want to apply global premium proxy and JS
 For example, to set Premium Proxy and JS Rendering for a specific request:
 
 ```python
-# pip install scrapy_zenrows
+# pip install scrapy-zenrows
 from scrapy_zenrows.zenrows_request import ZenRowsRequest
 
 class YourSpider(scrapy.Spider):
