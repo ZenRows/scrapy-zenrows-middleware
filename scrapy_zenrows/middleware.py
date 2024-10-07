@@ -21,7 +21,7 @@ class ZenRowsMiddleware:
         if not api_key:
             raise NotConfigured("ZenRows API Key is not configured")
 
-        use_proxy = crawler.settings.getbool("USE_ZENROWS_PROXY", False)
+        use_proxy = crawler.settings.getbool("PREMIUM_PROXY", False)
 
         js_render = crawler.settings.getbool("JS_RENDER", False)
 

@@ -36,7 +36,7 @@ _settings.py_
 ```python
 # ...
 
-USE_ZENROWS_PROXY = True # to turn on premium proxy (False by default)
+PREMIUM_PROXY = True # to turn on premium proxy (False by default)
 JS_RENDER = True # to turn on JS rendering (False by default)
 ```
 

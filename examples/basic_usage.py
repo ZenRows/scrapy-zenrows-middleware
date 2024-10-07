@@ -13,7 +13,7 @@ class MySpider(scrapy.Spider):
         "DOWNLOADER_MIDDLEWARES": {
             "zenrows_scraper_api_middleware.middleware.ZenRowsMiddleware": 543,
         },
-        "USE_ZENROWS_PROXY": True,  # False by default
+        "PREMIUM_PROXY": True,  # False by default
         "JS_RENDER": True,  # False by default
     }
 
