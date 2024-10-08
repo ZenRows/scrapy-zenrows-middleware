@@ -97,9 +97,10 @@ class YourSpider(scrapy.Spider):
             )
 ```
 
-For more information and supported parameters, check out how our [features](https://docs.zenrows.com/scraper-api/features/).
+For more information and supported parameters, check out our [Scraper API features](https://docs.zenrows.com/scraper-api/features/).
 
-**Using Custom Headers**
+#### Using Custom Headers
+
 You must set the `custom_headers` parameter to true in your request to use customized headers. This tells ZenRows to include your custom headers while managing critical browser-based headers.
 
 For example, the following adds the referer header:
@@ -125,4 +126,4 @@ class YourSpider(scrapy.Spider):
             )
 ```
 
-Check our [headers heature](https://docs.zenrows.com/scraper-api/features/headers) for more information on the accepted request headers and how to set them.
+Check our [headers feature](https://docs.zenrows.com/scraper-api/features/headers) for more information on the accepted request headers and how to set them.
