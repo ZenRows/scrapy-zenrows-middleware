@@ -29,15 +29,15 @@ ZENROWS_API_KEY = "<YOUR_ZENROWS_API_KEY>"
 
 #### Set Global Premium Proxy Rotation and JS Rendering
 
-The middleware will not use premium proxy and JS rendering by default. So, `USE_ZENROWS_PROXY` and `JS_RENDER` are `False` by default. To turn on premium proxy and JS rendering globally, set both parameters to `True`:
+The middleware will not use premium proxy and JS rendering by default. So, `USE_ZENROWS_PREMIUM_PROXY` and `USE_ZENROWS_JS_RENDER` are `False` by default. To turn on premium proxy and JS rendering globally, set both parameters to `True`:
 
 _settings.py_
 
 ```python
 # ...
 
-PREMIUM_PROXY = True # to turn on premium proxy (False by default)
-JS_RENDER = True # to turn on JS rendering (False by default)
+USE_ZENROWS_PREMIUM_PROXY = True # to turn on premium proxy (False by default)
+USE_ZENROWS_JS_RENDER = True # to turn on JS rendering (False by default)
 ```
 
 ### Override Global Settings for Specific Requests

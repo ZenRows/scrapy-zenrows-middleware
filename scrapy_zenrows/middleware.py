@@ -1,6 +1,7 @@
 from urllib.parse import urlencode
 from scrapy.exceptions import NotConfigured
 from .zenrows_request import ZenRowsRequest
+import logging
 
 
 class ZenRowsMiddleware:
@@ -14,6 +15,7 @@ class ZenRowsMiddleware:
         self.zenrows_url = "https://api.zenrows.com/v1"
         self.use_proxy = use_proxy
         self.js_render = js_render
+        self.logger = logging.getLogger(__name__)
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -21,9 +23,9 @@ class ZenRowsMiddleware:
         if not api_key:
             raise NotConfigured("ZenRows API Key is not configured")
 
-        use_proxy = crawler.settings.getbool("PREMIUM_PROXY", False)
+        use_proxy = crawler.settings.getbool("USE_ZENROWS_PREMIUM_PROXY", False)
 
-        js_render = crawler.settings.getbool("JS_RENDER", False)
+        js_render = crawler.settings.getbool("USE_ZENROWS_JS_RENDER", False)
 
         return cls(
             api_key=api_key,
@@ -43,6 +45,17 @@ class ZenRowsMiddleware:
                 js_render,
             )
             request._set_url(api_url)
+
+    def process_response(self, request, response, spider):
+        if response.status == 401:
+            self.logger.error("Unauthorized: Invalid ZenRows API key provided.")
+
+        elif response.status >= 400:
+            error_response = response.json()
+            error_title = error_response.get("title", "No title found")
+            self.logger.error(f"Error {response.status}: {error_title}")
+
+        return response
 
     def get_zenrows_api_url(self, url, params, use_proxy, js_render):
         payload = {"url": url}
