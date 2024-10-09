@@ -1,6 +1,7 @@
 from urllib.parse import urlencode
 from scrapy.exceptions import NotConfigured
 from .zenrows_request import ZenRowsRequest
+from .api_key_handler import HideApiKeyHandler
 import logging
 
 
@@ -27,11 +28,22 @@ class ZenRowsMiddleware:
 
         js_render = crawler.settings.getbool("USE_ZENROWS_JS_RENDER", False)
 
+        cls.set_up_logging(crawler)
+
         return cls(
             api_key=api_key,
             use_proxy=use_proxy,
             js_render=js_render,
         )
+
+    @staticmethod
+    def set_up_logging(crawler):
+        formatter = HideApiKeyHandler(
+            "%(asctime)s [%(name)s] %(levelname)s: %(message)s"
+        )
+        root = logging.getLogger()
+        for handler in root.handlers:
+            handler.setFormatter(formatter)
 
     def process_request(self, request, spider):
         if isinstance(request, ZenRowsRequest):
