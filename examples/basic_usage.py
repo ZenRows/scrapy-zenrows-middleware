@@ -1,6 +1,6 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from scrapy_zenrows.zenrows_request import ZenRowsRequest
+from scrapy_zenrows import ZenRowsRequest
 
 
 class MySpider(scrapy.Spider):
@@ -8,10 +8,10 @@ class MySpider(scrapy.Spider):
     start_urls = ["https://www.scrapingcourse.com/cloudflare-challenge"]
 
     custom_settings = {
-        # Put the following in your settings.py file
+        # put the following in your settings.py file
         "ZENROWS_API_KEY": "<YOUR_ZENROWS_API_KEY>",
         "DOWNLOADER_MIDDLEWARES": {
-            "zenrows_scraper_api_middleware.middleware.ZenRowsMiddleware": 543,
+            "scrapy_zenrows.ZenRowsMiddleware": 543,
         },
         "USE_ZENROWS_PREMIUM_PROXY": True,  # False by default
         "USE_ZENROWS_JS_RENDER": True,  # False by default

@@ -20,7 +20,7 @@ _settings.py_
 
 ```python
 DOWNLOADER_MIDDLEWARES = {
-    "scrapy_zenrows.middleware.ZenRowsMiddleware": 543,
+    "scrapy_zenrows.ZenRowsMiddleware": 543,
 }
 
 # ZenRows API Key
@@ -50,7 +50,7 @@ For example, to set Premium Proxy and JS Rendering for a specific request:
 
 ```python
 # pip install scrapy-zenrows
-from scrapy_zenrows.zenrows_request import ZenRowsRequest
+from scrapy_zenrows import ZenRowsRequest
 
 class YourSpider(scrapy.Spider):
     # ...

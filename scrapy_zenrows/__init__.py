@@ -1,4 +1,4 @@
-__all__ = ["ZenRowsRequest", "ZenRowsMiddleware", "ZenRowsSpider"]
+__all__ = ["ZenRowsRequest", "ZenRowsMiddleware"]
 
 
 from .zenrows_request import ZenRowsRequest
