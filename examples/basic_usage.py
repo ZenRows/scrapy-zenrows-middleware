@@ -33,10 +33,13 @@ class MySpider(scrapy.Spider):
                 headers={
                     "Referer": "https://www.google.com/",
                 },
+                cookies={
+                    "currency": "USD",
+                    "country": "UY",
+                },
             )
 
     def parse(self, response):
-        # extract product names and prices
         print(response.text)
 
 
