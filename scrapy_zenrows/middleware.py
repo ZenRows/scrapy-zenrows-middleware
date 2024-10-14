@@ -13,7 +13,6 @@ class ZenRowsMiddleware:
         self.use_proxy = use_proxy
         self.js_render = js_render
         self.logger = logging.getLogger(__name__)
-        self.allowed_domains = ["api.zenrows.com"]
 
     @classmethod
     def from_crawler(cls, crawler):
