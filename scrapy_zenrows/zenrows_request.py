@@ -15,7 +15,6 @@ class ZenRowsRequest(Request):
     ):
         meta = copy.deepcopy(meta) or {}
         self.params = params or {}
-        self.original_url = url
 
         super(ZenRowsRequest, self).__init__(
             url,
