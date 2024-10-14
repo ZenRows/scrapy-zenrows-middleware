@@ -25,7 +25,6 @@ class PaginationSpider(scrapy.Spider):
                 callback=self.parse,
                 params={
                     "js_render": "true",
-                    "premium_proxy": "true",
                 },
             )
 
