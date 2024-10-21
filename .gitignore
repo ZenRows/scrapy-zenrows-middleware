@@ -1,0 +1,5 @@
+build
+dist
+scrapy_zenrows.egg-info
+__pycache__
+.pypirc
