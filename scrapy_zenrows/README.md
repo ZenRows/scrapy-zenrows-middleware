@@ -32,7 +32,7 @@ pip install scrapy-zenrows
 
 ## Usage
 
-- Sign up for free on [ZenRows](https://www.zenrows.com/) to open the Request Builder and copy your ZenRows API key and implement the middleware.
+- Sign up for free on [ZenRows](https://www.zenrows.com/?utm_source=github&utm_medium=readme&utm_campaign=scrapy-zenrows-middleware) to open the Request Builder and copy your ZenRows API key and implement the middleware.
 
 ### Global Settings
 
@@ -119,7 +119,7 @@ class YourSpider(scrapy.Spider):
             )
 ```
 
-For more information and supported parameters, check out our [Scraper API features](https://docs.zenrows.com/scraper-api/features/).
+For more information and supported parameters, check out our [Scraper API features](https://docs.zenrows.com/scraper-api/features/?utm_source=github&utm_medium=readme&utm_campaign=scrapy-zenrows-middleware).
 
 #### Using Custom Headers
 
@@ -173,7 +173,7 @@ class YourSpider(scrapy.Spider):
             )
 ```
 
-Check our [headers feature](https://docs.zenrows.com/scraper-api/features/headers) for more information on the accepted request headers and how to set them.
+Check our [headers feature](https://docs.zenrows.com/scraper-api/features/headers?utm_source=github&utm_medium=readme&utm_campaign=scrapy-zenrows-middleware) for more information on the accepted request headers and how to set them.
 
 ## Usage Examples
 
@@ -184,8 +184,8 @@ Here are example spider demonstrating how to use the `scrapy_zenrows` middleware
 - **[custom_headers_spider](https://github.com/ZenRows/scrapy-zenrows-middleware/blob/main/examples/examples/examples/spiders/custom_headers_spider.py)**: Shows how to specify custom headers, including Cookies while using `ZenRowsRequest`.
 - **[pagination_spider](https://github.com/ZenRows/scrapy-zenrows-middleware/blob/main/examples/examples/examples/spiders/pagination_spider.py)**: Shows how to implement pagination in Scrapy while using `ZenRowsRequest`.
 - **[screenshot_spider](https://github.com/ZenRows/scrapy-zenrows-middleware/blob/main/examples/examples/examples/spiders/screenshot_spider.py)**: Demonstrates how to add screenshot capability to Scrapy with the ZenRows Scraper API.
-- **[table_parsing_spider](https://github.com/ZenRows/scrapy-zenrows-middleware/blob/main/examples/examples/examples/spiders/table_parsing_spider.py)**: Examples showing how to parse a table using the `outputs` feature of the ZenRows Scraper API. Check the [supported outputs](https://docs.zenrows.com/scraper-api/features/output) for more information.
+- **[table_parsing_spider](https://github.com/ZenRows/scrapy-zenrows-middleware/blob/main/examples/examples/examples/spiders/table_parsing_spider.py)**: Examples showing how to parse a table using the `outputs` feature of the ZenRows Scraper API. Check the [supported outputs](https://docs.zenrows.com/scraper-api/features/output?utm_source=github&utm_medium=readme&utm_campaign=scrapy-zenrows-middleware) for more information.
 
 Examples directory: [examples](https://github.com/ZenRows/scrapy-zenrows-middleware/blob/main/examples/examples/examples/spiders/)
 
-👉🏼 **[Official scrapy-zenrows integration documentation](https://docs.zenrows.com/scraping-api/integrations/scrapy)**
+👉🏼 **[Official scrapy-zenrows integration documentation](https://docs.zenrows.com/scraping-api/integrations/scrapy?utm_source=github&utm_medium=readme&utm_campaign=scrapy-zenrows-middleware)**

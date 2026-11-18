@@ -36,7 +36,7 @@ The scrapy-zenrows middlware brings all the functionalities of the ZenRows® Scr
 
 👉🏼 [Installation and Usage](scrapy_zenrows/README.md)
 
-👉🏼 [API Reference](https://docs.zenrows.com/scraper-api/api-reference)
+👉🏼 [API Reference](https://docs.zenrows.com/scraper-api/api-reference?utm_source=github&utm_medium=readme&utm_campaign=scrapy-zenrows-middleware)
 
 ## Contributing
 
